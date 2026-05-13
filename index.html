@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>George Trout | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#022448", "secondary": "#00668a", "on-surface": "#191c1e",
+                        "on-surface-variant": "#43474e", "background": "#f7f9fb", "surface": "#f7f9fb",
+                        "outline-variant": "#c4c6cf", "primary-container": "#1e3a5f", "on-primary": "#ffffff",
+                        "secondary-container": "#d0e4ff", "on-secondary-container": "#001d34"
+                    },
+                    "spacing": { "section-gap": "80px", "container-max": "1200px", "margin-desktop": "64px", "margin-mobile": "20px" }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-sans">
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-outline-variant/30">
+        <div class="flex justify-between items-center h-[72px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="text-2xl font-bold text-primary">George Trout</div>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a class="text-secondary font-bold border-b-2 border-secondary pb-1" href="index.html">Home</a>
+                <a class="text-on-surface-variant hover:text-secondary transition-colors" href="myprojects.html">Work</a>
+                <a class="text-on-surface-variant hover:text-secondary transition-colors" href="aboutme.html">About</a>
+                <button class="bg-primary text-white px-6 py-2 rounded-lg font-bold">Contact Me</button>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="pt-[72px]">
+        <section class="pt-section-gap pb-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/30 text-on-secondary-container text-sm font-medium">
+                        <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> Available for Internships
+                    </div>
+                    <h1 class="text-6xl font-bold text-primary leading-tight">George Trout</h1>
+                    <p class="text-2xl text-on-surface-variant">Computer Science Student & Incoming IT Intern</p>
+                    <p class="text-lg text-on-surface-variant max-w-xl">Pursuing my degree at Salisbury University and preparing for an internship with ITNova Consulting.</p>
+                    <div class="flex gap-4">
+                        <a href="myprojects.html" class="bg-primary text-on-primary px-8 py-3 rounded-lg font-bold hover:shadow-lg transition-all">View My Work</a>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVsnpL9nC_Yxc8AfgPCOPAGtay8MA8reth-2vmu8FChwN-m_7cgfqa5yDcyOaQRqS578X28BO2pWz0vkKoyfsVE2OSm6I7mmwfnc5PY3BZEHmR15i3KlikzkEZGz6dAjWPMesrs4equEBpYxyet-EC96TI8VgvRNIfPXOcdJOIekLmEAtu-K_as7eNVAI7mnF-td40pEsA3Ig3EfB45nziHQYi04rzjJ1pCu4P26w_bnCQ3v5M4L1XyQi7KKtO_h82w8HIYm5j_iTj" class="rounded-2xl shadow-2xl w-full aspect-square object-cover" alt="George Trout">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full py-12 border-t border-outline-variant bg-white">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center">
+            <p>© 2024 George Trout. Built with precision.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-secondary">LinkedIn</a>
+                <a href="#" class="hover:text-secondary">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
