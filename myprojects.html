@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>My Work | George Trout</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"> <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    "colors": { "primary": "#022448", "secondary": "#00668a", "outline-variant": "#c4c6cf" },
+                    "spacing": { "section-gap": "80px", "container-max": "1200px", "margin-desktop": "64px", "margin-mobile": "20px" }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-sans">
+    <nav class="fixed top-0 w-full z-50 bg-white/80 border-b border-outline-variant/30 shadow-sm">
+        <div class="flex justify-between items-center h-[72px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="text-2xl font-bold text-primary">George Trout</div>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a class="text-on-surface-variant hover:text-secondary" href="home.html">Home</a>
+                <a class="text-secondary font-bold border-b-2 border-secondary pb-1" href="myprojects.html">Work</a>
+                <a class="text-on-surface-variant hover:text-secondary" href="aboutme.html">About</a>
+                <button class="bg-primary text-white px-6 py-2 rounded-lg font-bold">Contact Me</button>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-[72px]">
+        <header class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center md:text-left">
+            <h1 class="text-5xl font-bold text-primary">My Work & Projects</h1>
+        </header>
+        <section class="pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            <article class="bg-white rounded-xl project-card-shadow overflow-hidden border border-outline-variant/10">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqv-LW39-eDkKVdNxgPApCXvivyFLOH1VPoBEgLm0_OH-GJbIAMjtDCplGywrUCBQV7kv7j9Iqtq-r9fAgTbnZTBddcpeDCO8W1BFAlxscz3MyXtS1pnAMzK5pJDmVAFi63AQ-ZUakTHTCNhwc9ZDxCwBTAFkXKhFuUnUhD_yPlgYu8QdWisQic9HvITwFMRKfzg5SGodOc0NgqO00xsYGow_izduWyeN2nIpOPM4Ps4ZjNlP8v1LMjokYwQvfZcZHjvSfx9lsDHjj" alt="ITNova" class="w-full aspect-video object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-primary">ITNova Consulting Internship</h3>
+                    <p class="text-gray-600 mt-4">Enterprise-level IT solutions and infrastructure assessment.</p>
+                </div>
+            </article>
+            <article class="bg-white rounded-xl project-card-shadow overflow-hidden border border-outline-variant/10">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOdsPYliFw0fl1FqELZvZJVrUUVvhM8y4u9Wx2Ycp5gD5FMarS007AdA6Pk1ZW8PeEPqRBGiJRB7vAtN8HfStTdaoBVOweWnovEAkchKQFY5qZE_BHxuPh1lFGH_rjvTC2M6NuavImr1_dhjBHHXy3HtLmvKjNKQ1Pd0juNPxgpr7sL28TsgD4PVH64WrpU1ehifeeOQMaEGG8BS8FWHvP2a_1Et_YAuzdVbFhP4-RuP6mQKh4K6hHW0jAgSrx8HeJM7bOFFgZm4MD" alt="Code" class="w-full aspect-video object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-primary">CS Coursework</h3>
+                    <p class="text-gray-600 mt-4">Algorithmic complexity and full-stack engineering projects.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
