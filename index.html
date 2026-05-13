@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>George Trout | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#9ca3b6",
+                        "outline": "#74777f",
+                        "outline-variant": "#c4c6cf",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#004d6a",
+                        "background": "#f7f9fb",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#455f87",
+                        "primary-container": "#1e3a5f",
+                        "surface-variant": "#e0e3e5",
+                        "on-surface": "#191c1e",
+                        "on-primary-container": "#8aa4cf",
+                        "on-primary-fixed-variant": "#2d486d",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#141b2b",
+                        "inverse-surface": "#2d3133",
+                        "surface": "#f7f9fb",
+                        "surface-bright": "#f7f9fb",
+                        "tertiary-container": "#323949",
+                        "surface-container-low": "#f2f4f6",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-tertiary-fixed-variant": "#404758",
+                        "inverse-on-surface": "#eff1f3",
+                        "secondary": "#00668a",
+                        "primary-fixed": "#d5e3ff",
+                        "on-secondary-fixed": "#001e2c",
+                        "secondary-container": "#40c2fd",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#c4e7ff",
+                        "surface-container-high": "#e6e8ea",
+                        "primary-fixed-dim": "#adc8f5",
+                        "inverse-primary": "#adc8f5",
+                        "tertiary-fixed": "#dce2f7",
+                        "on-primary": "#ffffff",
+                        "primary": "#022448",
+                        "tertiary": "#1d2433",
+                        "secondary-fixed-dim": "#7bd0ff",
+                        "on-surface-variant": "#43474e",
+                        "error": "#ba1a1a",
+                        "surface-container": "#eceef0",
+                        "on-background": "#191c1e",
+                        "surface-dim": "#d8dadc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "margin-mobile": "20px",
+                        "section-gap": "80px",
+                        "container-max": "1200px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-md": ["JetBrains Mono"],
+                        "display-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-body-md text-body-md text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+<div class="flex justify-between items-center h-[72px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-primary-fixed-dim cursor-pointer active:opacity-70">
+                George Trout
+            </div>
+<div class="hidden md:flex items-center gap-8 font-body-md text-body-md">
+<a class="text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary pb-1 cursor-pointer active:opacity-70 transition-colors duration-200" href="index.html">Home</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary cursor-pointer active:opacity-70 transition-colors duration-200" href="work.html">Work</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary cursor-pointer active:opacity-70 transition-colors duration-200" href="about.html">About</a>
+</div>
+<a href="mailto:georgetrout2@gmail.com" class="border border-outline-variant text-primary px-8 py-3 rounded-lg font-bold hover:bg-surface-container-low transition-all duration-300 cursor-pointer">
+    Contact Me
+</a>
+</div>
+</nav>
+<main class="pt-[72px]">
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-section-gap pb-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/10 border border-secondary-container/30 text-secondary font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                        Available for Internships
+                    </div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary max-w-2xl">
+                        George Trout
+                    </h1>
+<p class="font-headline-lg text-headline-lg text-on-surface-variant">
+                        Computer Science Student &amp; Incoming IT Intern
+                    </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        I am currently pursuing my degree at Salisbury University and preparing for an internship with ITNova Consulting. Focused on building robust software solutions and providing high-level technical support.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a href="work.html" class="bg-primary text-on-primary px-8 py-3 rounded-lg font-bold hover:shadow-lg transition-all duration-300 cursor-pointer flex items-center gap-2">
+    View My Work
+    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a href="mailto:georgetrout2@gmail.com" class="border border-outline-variant text-primary px-8 py-3 rounded-lg font-bold hover:bg-surface-container-low transition-all duration-300 cursor-pointer">
+    Contact Me
+</a>
+</div>
+</div>
+<div class="flex-1 w-full max-w-[500px] relative">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+<img alt="George Trout" class="w-full h-full object-cover" data-alt="A professional workspace setting featuring a high-end laptop with lines of clean code visible on the screen. The environment is a modern, minimalist home office with soft, natural lighting coming from a nearby window. The color palette is dominated by deep blues and crisp whites, reflecting a corporate and highly technical aesthetic. A small green succulent plant sits in the corner of the desk, adding a touch of organic life to the precise, engineered environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVsnpL9nC_Yxc8AfgPCOPAGtay8MA8reth-2vmu8FChwN-m_7cgfqa5yDcyOaQRqS578X28BO2pWz0vkKoyfsVE2OSm6I7mmwfnc5PY3BZEHmR15i3KlikzkEZGz6dAjWPMesrs4equEBpYxyet-EC96TI8VgvRNIfPXOcdJOIekLmEAtu-K_as7eNVAI7mnF-td40pEsA3Ig3EfB45nziHQYi04rzjJ1pCu4P26w_bnCQ3v5M4L1XyQi7KKtO_h82w8HIYm5j_iTj"/>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -top-6 -left-6 w-48 h-48 bg-primary-container/10 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Skills Preview -->
+<section class="py-20 bg-surface-container-low border-y border-outline-variant/20">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="space-y-2">
+<h2 class="font-headline-lg text-headline-lg text-primary">Technical Expertise</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Specializing in software engineering and systems administration.</p>
+</div>
+<div class="font-label-md text-label-md text-secondary border-b border-secondary pb-1">
+                        View All Skills
+                    </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Python Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="w-12 h-12 bg-primary/5 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="terminal">terminal</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Python Development</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Building automated scripts, data analysis tools, and backend services with a focus on efficiency.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container rounded-sm font-label-sm text-label-sm">Django</span>
+<span class="px-3 py-1 bg-surface-container rounded-sm font-label-sm text-label-sm">Pandas</span>
+<span class="px-3 py-1 bg-surface-container rounded-sm font-label-sm text-label-sm">PyTest</span>
+</div>
+</div>
+<!-- Java Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="w-12 h-12 bg-primary/5 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="code">code</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Java Engineering</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Developing robust object-oriented applications with strong architectural foundations and testing.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container rounded-sm font-label-sm text-label-sm">Spring Boot</span>
+<span class="px-3 py-1 bg-surface-container rounded-sm font-label-sm text-label-sm">JUnit</span>
+<span class="px-3 py-1 bg-surface-container rounded-sm font-label-sm text-label-sm">Maven</span>
+</div>
+</div>
+<!-- IT Support Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="w-12 h-12 bg-primary/5 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="support_agent">support_agent</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">IT Infrastructure</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Expertise in network configuration, hardware troubleshooting, and system maintenance for enterprise.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container rounded-sm font-label-sm text-label-sm">Active Directory</span>
+<span class="px-3 py-1 bg-surface-container rounded-sm font-label-sm text-label-sm">Networking</span>
+<span class="px-3 py-1 bg-surface-container rounded-sm font-label-sm text-label-sm">Linux</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Current Focus Section (Bento Style) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12">Experience &amp; Education</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Salisbury University -->
+<div class="md:col-span-7 bg-primary text-on-primary p-10 rounded-2xl flex flex-col justify-between min-h-[300px]">
+<div>
+<div class="font-label-md text-label-md text-primary-fixed mb-4">ACADEMIC BACKGROUND</div>
+<h3 class="font-headline-lg text-headline-lg mb-4">Salisbury University</h3>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-md">
+                            Pursuing a B.S. in Computer Science. Focusing on Data Structures, Algorithms, and System Architecture.
+                        </p>
+</div>
+<div class="flex items-center gap-2 mt-8">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md">Salisbury, MD</span>
+</div>
+</div>
+<!-- ITNova Consulting -->
+<div class="md:col-span-5 bg-white border border-outline-variant p-10 rounded-2xl flex flex-col justify-between min-h-[300px] shadow-sm">
+<div>
+<div class="font-label-md text-label-md text-secondary mb-4">INCOMING INTERNSHIP</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">ITNova Consulting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Selected for a competitive IT internship starting soon. Ready to apply technical theory to real-world business challenges.
+                        </p>
+</div>
+<div class="mt-8 flex justify-end">
+<div class="w-16 h-16 bg-surface-container flex items-center justify-center rounded-full text-secondary">
+<span class="material-symbols-outlined text-[28px]" data-icon="work" data-weight="fill">work</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-low dark:bg-tertiary-container border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center gap-base px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-label-md font-label-md font-bold text-primary dark:text-primary-fixed">
+                George Trout
+            </div>
+<div class="flex gap-8 font-label-md text-label-md">
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary underline decoration-2 underline-offset-4 transition-all duration-300" href="#">LinkedIn</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary underline decoration-2 underline-offset-4 transition-all duration-300" href="#">GitHub</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary underline decoration-2 underline-offset-4 transition-all duration-300" href="#">Email</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary underline decoration-2 underline-offset-4 transition-all duration-300" href="#">Resume</a>
+</div>
+<div class="text-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container">
+                © 2024 George Trout. Built with precision.
+            </div>
+</div>
+</footer>
+</body></html>
